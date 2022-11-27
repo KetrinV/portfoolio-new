@@ -1,0 +1,284 @@
+@font-face { 
+    font-family:studiofeixen-variable;
+    src:url(https://itssharl.ee/fonts/studio-feixen-sans-variable.woff2) format("woff2"),url(https://itssharl.ee/fonts/studio-feixen-sans-variable.ttf) format("truetype");
+    font-weight:400;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:studiofeixen;
+    src:url(https://itssharl.ee/fonts/StudioFeixenSans-Bold.eot) format("embedded-opentype"),url(https://itssharl.eehttps://itssharl.ee/fonts/StudioFeixenSans-Bold.woff2) format("woff2"),url(/fonts/StudioFeixenSans-Bold.woff) format("woff"),url(https://itssharl.ee/fonts/StudioFeixenSans-Bold.ttf) format("truetype");
+    font-weight:700;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:studiofeixen;
+    src:url(https://itssharl.ee/fonts/StudioFeixenSans-Book.eot) format("embedded-opentype"),url(https://itssharl.eehttps://itssharl.ee/fonts/StudioFeixenSans-Book.woff2) format("woff2"),url(/fonts/StudioFeixenSans-Book.woff) format("woff"),url(https://itssharl.ee/fonts/StudioFeixenSans-Book.ttf) format("truetype");
+    font-weight:350;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:studiofeixen;
+    src:url(https://itssharl.ee/fonts/StudioFeixenSans-Medium.eot) format("embedded-opentype"),url(https://itssharl.eehttps://itssharl.ee/fonts/StudioFeixenSans-Medium.woff2) format("woff2"),url(/fonts/StudioFeixenSans-Medium.woff) format("woff"),url(https://itssharl.ee/fonts/StudioFeixenSans-Medium.ttf) format("truetype");
+    font-weight:500;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:studiofeixen;
+    src:url(https://itssharl.ee/fonts/StudioFeixenSans-Regular.eot) format("embedded-opentype"),url(https://itssharl.eehttps://itssharl.ee/fonts/StudioFeixenSans-Regular.woff2) format("woff2"),url(/fonts/StudioFeixenSans-Regular.woff) format("woff"),url(https://itssharl.ee/fonts/StudioFeixenSans-Regular.ttf) format("truetype");
+    font-weight:400;
+    font-style:normal;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+  
+  * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+  }
+  .container { 
+      position: relative; 
+      z-index: 1; 
+      overflow: hidden; 
+      width: 100%;
+  } 
+  
+  body { 
+      background-color: #1a1a1a;
+      color: #be95c4; 
+      width: 100%; 
+      height: auto; 
+      font-family: studiofeixen-variable,studiofeixen,Arial,Helvetica,sans-serif; 
+      letter-spacing: -.015em; 
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale; 
+      font-variation-settings: "wght" 500,"wdth" 100; 
+      font-weight: unset; 
+      font-size: 1em; 
+      transition: .25s;
+  } 
+  
+  .has-scroll-smooth body { 
+      overflow: hidden;
+  } 
+  
+  html { 
+      background-color: #f3f2f9; 
+      background-color: var(--background-color); 
+      color: var(--color); 
+      width: 100%; 
+      height: auto; 
+      font-family: studiofeixen-variable,studiofeixen,Arial,Helvetica,sans-serif; 
+      letter-spacing: -.015em; 
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale; 
+      font-variation-settings: "wght" 500,"wdth" 100; 
+      font-weight: unset; 
+      font-size: 1em; 
+      transition: .25s;
+  } 
+  
+  :root { 
+      --left-right-margin: 240px; 
+      --left-right-internal-margin: 24px; 
+      --top-margin: 240px; 
+      --top-internal-margin: 24px; 
+      --border-radius: 48px; 
+      --border: 2px; 
+  } 
+  
+  html.has-scroll-smooth { 
+      overflow: hidden;
+  } 
+  
+  [data-scroll-container]  { 
+      min-height: 100vh;
+  } 
+  
+  #scroll-container { 
+      transform: translateZ(0);
+  } 
+  
+  :selection { 
+      background-color: #78ffd1; 
+      color: #606887; 
+      -webkit-text-stroke: 0;
+  } 
+  
+  .page-content  { 
+      height: 100%; 
+      width: 100%;
+  } 
+  
+  .about { 
+      display: flex; 
+      flex-direction: row-reverse;
+  } 
+  
+  .about-right { 
+      padding-left: var(--left-right-internal-margin); 
+      width: 25%; 
+      position: relative;
+  } 
+  
+  .about-left { 
+      width: 75%; 
+      padding: var(--top-margin) var(--left-right-internal-margin) var(--top-internal-margin) var(--left-right-margin);
+  } 
+  
+  p { 
+      font-size: 1.25rem; 
+      margin: 0; 
+      font-variation-settings: "wght" 500,"wdth" 100; 
+      text-transform: none;
+  } 
+  
+  .link-wrapper { 
+      width: -webkit-fit-content; 
+      width: -moz-fit-content; 
+      width: fit-content; 
+      overflow-x: hidden;
+  } 
+  
+  a { 
+      font-size: 1.25rem; 
+      font-variation-settings: "wght" 500,"wdth" 125;
+      color: #606887;
+      text-transform: lowercase; 
+      text-decoration: none;
+  } 
+  
+  .page-head { 
+      display: flex; 
+      align-items: baseline;
+  } 
+  
+  hr { 
+      border-style: none; 
+      border-bottom: 0; 
+      border-top: var(--border) solid #606887;
+  } 
+  
+  .head-separator { 
+      width: 100%; 
+      margin-top: 12px; 
+      margin-bottom: 0;
+      background-color: #606887;
+  } 
+  
+  .link-wrapper .link  { 
+      width: auto; 
+      margin-bottom: 3px; 
+      white-space: nowrap;
+  } 
+  
+  .link-wrapper .link-underline  { 
+      position: relative; 
+      width: 100%; 
+      height: var(--border); 
+      margin-bottom: 6px; 
+      bottom: 0; 
+      left: 0; 
+      background-color: #606887; 
+      transform-origin: bottom right; 
+      transition: transform .25s ease-out;
+  } 
+  
+  h2 { 
+      margin:  0; 
+      font-weight:  unset;
+      text-transform: uppercase; 
+      font-variation-settings: "wght" 800,"wdth" 125; 
+      font-size: 3rem;
+  } 
+  
+  .page-head .page-title  { 
+      width: 100%; 
+      text-align: left; 
+      margin: 0; 
+      text-overflow: ellipsis; 
+      overflow-x: hidden;
+  } 
+
+  /* button */
+  .github {
+    margin-top: 50px;
+    color: #ffffff;
+    background-color: #76008a;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+  }
+  .figma {
+    margin-top: 50px;
+    color: #ffffff;
+    background-color: #cd5b9f;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+  }
+  .live {
+    margin-top: 50px;
+    color: #ffffff;
+    background-color: #7f5bcd;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+  }
+  .thoughts {
+    margin-top: 50px;
+    color: #ffffff;
+    background-color: #5badcd;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+  }
+  .button-container{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+.header-img{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+@media (max-width: 824px) {
+    .page-title{
+        font-size: 30px;
+    }
+}
+ @media (max-width: 654px) {
+    .page-title{
+        display: none;
+    }
+    .head-separator{
+        display: none;
+    }
+} 
