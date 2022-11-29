@@ -61,10 +61,6 @@ body {
     transition: .25s;
 }
 
-.has-scroll-smooth body {
-    overflow: hidden;
-}
-
 html {
     background-color: #f3f2f9;
     background-color: var(--background-color);
@@ -88,18 +84,6 @@ html {
     --top-internal-margin: 24px;
     --border-radius: 48px;
     --border: 2px;
-}
-
-html.has-scroll-smooth {
-    overflow: hidden;
-}
-
-[data-scroll-container] {
-    min-height: 100vh;
-}
-
-#scroll-container {
-    transform: translateZ(0);
 }
 
 :selection {

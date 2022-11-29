@@ -40,12 +40,6 @@
       margin: 0; 
       padding: 0; 
       box-sizing: border-box;
-  }
-  .container { 
-      position: relative; 
-      z-index: 1; 
-      overflow: hidden; 
-      width: 100%;
   } 
   
   body { 
@@ -61,10 +55,6 @@
       font-weight: unset; 
       font-size: 1em; 
       transition: .25s;
-  } 
-  
-  .has-scroll-smooth body { 
-      overflow: hidden;
   } 
   
   html { 
@@ -90,10 +80,6 @@
       --top-internal-margin: 24px; 
       --border-radius: 48px; 
       --border: 2px; 
-  } 
-  
-  html.has-scroll-smooth { 
-      overflow: hidden;
   } 
   
   [data-scroll-container]  { 
@@ -131,18 +117,6 @@
       padding: var(--top-margin) var(--left-right-internal-margin) var(--top-internal-margin) var(--left-right-margin);
   } 
   
-  .profile-pic-wrapper { 
-      background-color: #606887; 
-      border-radius: var(--border-radius);
-  } 
-  
-  .about-right .profile-pic-wrapper  { 
-      position: relative; 
-      padding-top: 177.7777777778%; 
-      border-radius: 0 0 0 var(--border-radius); 
-      overflow-y: hidden;
-  } 
-  
   p { 
       font-size: 1.25rem; 
       margin: 0; 
@@ -159,27 +133,6 @@
       margin-top: var(--top-internal-margin);
   } 
   
-  img { 
-      font-size: .75rem; 
-      font-variation-settings: "wght" 500,"wdth" 100; 
-      color: #f3f2f9;
-  } 
-  
-  .profile-pic-wrapper .profile-pic  { 
-      mix-blend-mode: lighten; 
-      border-radius: var(--border-radius);
-  } 
-  
-  .about-right .profile-pic-wrapper .profile-pic  { 
-      position: absolute; 
-      border-radius: 0 0 0 var(--border-radius); 
-      background-color: #606887; 
-      -o-object-position: 50% 25%; 
-      object-position: 50% 25%; 
-      -o-object-fit: cover; 
-      object-fit: cover;
-  } 
-  
   .link-wrapper { 
       width: -webkit-fit-content; 
       width: -moz-fit-content; 
@@ -188,7 +141,7 @@
   } 
   
   a { 
-      font-size: 1.25rem; 
+      font-size: 1.25vw; 
       font-variation-settings: "wght" 500,"wdth" 125;
       color: #606887;
       text-transform: lowercase; 
@@ -236,7 +189,7 @@
       font-weight:  unset;
       text-transform: uppercase; 
       font-variation-settings: "wght" 800,"wdth" 125; 
-      font-size: 3rem;
+      font-size: 3vw;
   } 
   
   .page-head .page-title  { 
@@ -277,5 +230,14 @@
      display: flex;
      justify-content: flex-start;
      flex-direction: column;
+    }
+    .contact{
+        display: none;
+    }
+    .school-pages{
+        display: none;
+    }
+    a{
+        font-size: 3vw;
     }
 }
