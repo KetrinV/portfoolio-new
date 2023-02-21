@@ -28,19 +28,11 @@
     font-weight:400;
     font-style:normal;
   }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
- 
- 
-  
-  * { 
-      margin: 0; 
-      padding: 0; 
-      box-sizing: border-box;
-  } 
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
   
   body { 
       background-color: #1a1a1a;
@@ -218,9 +210,10 @@
   .icon{
     margin-top: 3.5%;
     margin-left: 25px;
-    fill: #000000;
+    fill: #1c1c1c;
     height: 70px;
     width: 70px;
+    opacity: 80%;
   }
   .icon-text{
     color: #000000;

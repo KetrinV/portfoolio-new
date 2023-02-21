@@ -239,7 +239,7 @@
   ul{
       list-style: none;
   }
-  
+
   @media (max-width: 1382px) {
     .intro-text{
       display: flex;
